@@ -1,0 +1,204 @@
+/* Estilos Personalizados */
+
+:root {
+    --primary-color: #0d6efd;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+/* Formulario */
+#studentForm .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Tabla */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Estado de Estudiantes */
+.badge-passed {
+    background-color: #198754;
+}
+
+.badge-failed {
+    background-color: #dc3545;
+}
+
+/* Alertas */
+.alert {
+    border: none;
+    border-left: 4px solid;
+    margin-bottom: 1rem;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert-danger {
+    border-left-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    border-left-color: #ffc107;
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reporte */
+.report-success {
+    background: linear-gradient(135deg, #198754, #20c997);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.report-warning {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.report-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: rgb(10, 5, 5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.report-success h3,
+.report-warning h3,
+.report-danger h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.report-success p,
+.report-warning p,
+.report-danger p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .col-md-3 {
+        margin-bottom: 1rem;
+    }
+
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
+
+/* Botones */
+.btn {
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Estadísticas */
+.card.bg-primary,
+.card.bg-info,
+.card.bg-success,
+.card.bg-danger {
+    border: none;
+}
+
+.card.bg-primary .card-body,
+.card.bg-info .card-body,
+.card.bg-success .card-body,
+.card.bg-danger .card-body {
+    padding: 1.5rem;
+}
+
+.card.bg-primary h3,
+.card.bg-info h3,
+.card.bg-success h3,
+.card.bg-danger h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 3rem;
+    border-top: 1px solid #495057;
+}
