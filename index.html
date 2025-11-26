@@ -87,10 +87,73 @@
                 </div>
             </div>
         </section>
+        <!-- Sección de Estadísticas -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0">📊 Estadísticas del Grupo</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <div class="card text-center bg-primary text-white">
+                                <div class="card-body">
+                                    <h6 class="card-title">Total de Estudiantes</h6>
+                                    <h3 id="totalEstudiantes">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card text-center bg-info text-white">
+                                <div class="card-body">
+                                    <h6 class="card-title">Promedio de Notas</h6>
+                                    <h3 id="promedioNotas">0.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card text-center bg-success text-white">
+                                <div class="card-body">
+                                    <h6 class="card-title">Aprobados</h6>
+                                    <h3 id="aprobados">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card text-center bg-danger text-white">
+                                <div class="card-body">
+                                    <h6 class="card-title">Reprobados</h6>
+                                    <h3 id="reprobados">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
+        <!-- Sección de Reporte -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">📄 Reporte de Rendimiento</h5>
+                </div>
+                <div class="card-body">
+                    <button id="botonGenerarReporte" class="btn btn-lg btn-success w-100 mb-3">
+                        📈 Generar Reporte
+                    </button>
+                    <div id="contenedorReporte" class="d-none">
+                        <!-- El reporte se inyectará aquí -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2025 Sistema de Registro de Estudiantes - Grupo 4</p>
+    </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
