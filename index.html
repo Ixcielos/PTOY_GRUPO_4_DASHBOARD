@@ -26,21 +26,21 @@
                     <h5 class="mb-0">📝 Formulario de Registro</h5>
                 </div>
                 <div class="card-body">
-                    <form id="studentForm" novalidate>
+                    <form id="formularioEstudiante" novalidate>
                         <div class="row">
                             <div class="col-md-4 mb-3">
-                                <label for="studentName" class="form-label">Nombre del Estudiante</label>
-                                <input type="text" class="form-control" id="studentName" placeholder="Ej: Juan Pérez" required>
+                                <label for="nombreEstudiante" class="form-label">Nombre del Estudiante</label>
+                                <input type="text" class="form-control" id="nombreEstudiante" placeholder="Ej: Juan Pérez" required>
                                 <small class="text-muted">Campo obligatorio</small>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="studentAge" class="form-label">Edad</label>
-                                <input type="number" class="form-control" id="studentAge" placeholder="Ej: 20" min="1" required>
+                                <label for="edadEstudiante" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edadEstudiante" placeholder="Ej: 20" min="1" required>
                                 <small class="text-muted">Campo obligatorio</small>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="studentGrade" class="form-label">Nota Final (0–20)</label>
-                                <input type="number" class="form-control" id="studentGrade" placeholder="Ej: 15" min="0" max="20" step="0.1" required>
+                                <label for="notaEstudiante" class="form-label">Nota Final (0–20)</label>
+                                <input type="number" class="form-control" id="notaEstudiante" placeholder="Ej: 15" min="0" max="20" step="0.1" required>
                                 <small class="text-muted">Valor entre 0 y 20</small>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
-                            <tbody id="studentTableBody">
+                            <tbody id="cuerpoTablaEstudiantes">
                                 <tr>
                                     <td colspan="6" class="text-center text-muted py-4">
                                         No hay estudiantes registrados
